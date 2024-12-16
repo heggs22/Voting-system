@@ -1,0 +1,40 @@
+<form action="index.html" method="GET" class="login-form">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login - Online Voting System</title>
+        <link rel="stylesheet" href="styles.css"> 
+    </head>
+    <body>
+        <header class="header">
+            <h1>Login to Vote</h1>
+            <p>Access your account to participate in the voting process.</p>
+        </header>
+    
+        <main class="main-content">
+            <div class="login-container">
+                <form action="/login" method="POST" class="login-form">
+                    <div class="form-group">
+                        <label for="no">Matriculation no:</label>
+                        <input type="no" id="Matriculation no" name="Matriculation no" placeholder="Enter your Matriculation no" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+                <p class="register-link">
+                    Don't have an account? <a href="register.html">Register here</a>.
+                </p>
+            </div>
+        </main>
+    
+        <footer class="footer">
+            <p>&copy; 2024 Online Voting System. All rights reserved.</p>
+        </footer>
+    </body>
+    </html>
+    

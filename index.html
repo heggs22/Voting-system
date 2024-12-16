@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting</title>
+    <link rel="stylesheet" href="tolu.css">
+</head>
+<body>
+    <div class="header">
+        <div><h1>Vote for Your Favorite Candidate</h1></div>
+        <div><p>Select a candidate under each option and submit your vote!</p></div>
+    </div>
+    
+ <div class="options-container">
+            <div class="option">
+                <h2>Option 1</h2>
+                <div class="candidate">
+                    <img src="Image/logo.jpeg" alt="Candidate A Image" class="candidate-image">
+                </div>
+                <button onclick="submitVote('Option 1', 'Candidate A')" class="candidate-btn">Asake [Mr Money]</button>
+                <div>
+                    <img src="Image/logo.jpeg" alt="Candidate A Image" class="candidate-image">
+                <button onclick="submitVote('Option 1', 'Candidate B')" class="candidate-btn">Ayomide [Mide]</button>
+                </div>
+                <img src="Image/logo.jpeg" alt="Candidate A Image" class="candidate-image">
+                <button onclick="submitVote('Option 1', 'Candidate C')" class="candidate-btn">Candidate C</button>
+            </div>
+            <h2>Option 2</h2>
+            <div class="option">
+                <img src="Image/logo.jpeg" alt="Candidate A Image" class="candidate-image">
+                <div>
+                    <button onclick="submitVote('Option 2', 'Candidate A')" class="candidate-btn">Candidate A</button>
+                <img src="Image/logo.jpeg" alt="Candidate A Image" class="candidate-image">
+                </div>
+                <button onclick="submitVote('Option 2', 'Candidate B')" class="candidate-btn">Candidate B</button>
+                <img src="Image/logo.jpeg" alt="Candidate A Image" class="candidate-image">
+                <button onclick="submitVote('Option 2', 'Candidate C')" class="candidate-btn">Candidate C</button>
+            </div>
+
+            <div class="option">
+                <h2>Option 3</h2>
+                <button onclick="submitVote('Option 3', 'Candidate A')" class="candidate-btn">Candidate A</button>
+                <button onclick="submitVote('Option 3', 'Candidate B')" class="candidate-btn">Candidate B</button>
+                <button onclick="submitVote('Option 3', 'Candidate C')" class="candidate-btn">Candidate C</button>
+            </div>
+
+            <div class="option">
+                <h2>Option 4</h2>
+                <button onclick="submitVote('Option 4', 'Candidate A')" class="candidate-btn">Candidate A</button>
+                <button onclick="submitVote('Option 4', 'Candidate B')" class="candidate-btn">Candidate B</button>
+                <button onclick="submitVote('Option 4', 'Candidate C')" class="candidate-btn">Candidate C</button>
+            </div>
+
+            <div class="option">
+                <h2>Option 5</h2>
+                <button onclick="submitVote('Option 5', 'Candidate A')" class="candidate-btn">Candidate A</button>
+                <button onclick="submitVote('Option 5', 'Candidate B')" class="candidate-btn">Candidate B</button>
+                <button onclick="submitVote('Option 5', 'Candidate C')" class="candidate-btn">Candidate C</button>
+            </div>
+
+        <div id="thank-you" class="thank-you hidden">
+            <p>Thank you for voting!</p>
+            <p id="vote-result"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

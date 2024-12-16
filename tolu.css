@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #f0f2f5;
+    height: 100vh;
+    animation: backgroundAnimation 20s infinite;
+}
+@keyframes backgroundAnimation {
+    0% { background-color: #f0f2f5; }
+    25% { background-color: #0d8f25; }
+    50% { background-color: #1d8de8; }
+    75% { background-color: #f08630; }
+    100% { background-color: #e6ba0ad4; }
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 75%;
+    background: oldlace;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-out;
+}
+h1{
+    color: black;
+    font-size: 19px;
+}
+.options-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.option {
+    border: 2px solid brown;
+    padding: 15px;
+    border-radius: 8px;
+    background: wheat;
+    width: 310px;
+}
+.candidate-btn {
+    padding: 10px;
+    background-color: whitesmoke;
+    color: black;
+    border: 1px solid brown;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}  
+.candidate-btn:hover{
+    background-color: #0056b3;
+}
+.thank-you {
+    margin-top: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.thank-you.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+body {
+    /* Set the background image */
+    background-image: url('logo.jpeg'); /* Replace with your image path */
+    
+    /* Make the image cover the full page and stay in place when scrolling */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    /* Optional: Add a slight overlay to make content more readable */
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust color and opacity */
+    z-index: -1; /* Keeps it behind other content */
+}
